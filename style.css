@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./img/matrix.jpeg");
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+}
+
+h1 {
+
+    font-weight: 900;
+    font-size: 80px;
+}
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label {
+    color: white;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border: 5px ridge green;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1 {
+    display: flex;
+    gap: 30px;
+}
+input[type='number']{
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px ridge green;
+    width: 60px;
+    height: 20px
+}
+
+.button {
+    gap: 20px;
+}
+
+.blank {
+    background-color: black;
+    transition: all 1s ease;
+}
+
+.hovered {  
+    background-color: green;
+}
+
+.reset {
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid green;
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 20px;
+    border-radius: 10px;
+}
