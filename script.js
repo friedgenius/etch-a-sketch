@@ -42,7 +42,8 @@ reset.addEventListener("click", function(e){
     let number = document.querySelector("#side");
     let gridSide = checkNumber(number.value)
     let pixels = document.querySelectorAll(".blank")
-    pixels.forEach(pixel => pixel.classList.remove("hovered"))
+    pixels.forEach(pixel => pixel.classList.remove("hovered"));
+    pixels.forEach(pixel => {pixel.style.backgroundColor = "black"});
     number.value = null;
     if (!gridSide) return;
     createGrid(gridSide);
